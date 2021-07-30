@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.example.tools</groupId>
+  <artifactId>unpack</artifactId>
+  <version>1.0.0</version>
+
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+
+    <bb.version>2021.07</bb.version>
+    <ssdk-bom.version>10.3.0</ssdk-bom.version>
+    <ssdk-bom.version>13.0.0</ssdk-bom.version>
+    <platform-bom.version>1.13.3</platform-bom.version>
+    <dbs-bom.version>2.17.3</dbs-bom.version>
+    <!--    <dbs-bom.version>2.18.2.8</dbs-bom.version>-->
+    <!--    <dbs-bom.version>2.21.0</dbs-bom.version>-->
+    <!--    <identity.version>1.6.2</identity.version>-->
+    <identity-bom.version>1.9.0</identity-bom.version>
+    <flow-bom.version>1.5.5.9</flow-bom.version>
+    <cx-bom.version>6.3.4</cx-bom.version>
+
+    <keycloak.version>12.0.4</keycloak.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.keycloak.bom</groupId>
+        <artifactId>keycloak-adapter-bom</artifactId>
+        <version>${keycloak.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.keycloak.bom</groupId>
+        <artifactId>keycloak-spi-bom</artifactId>
+        <version>${keycloak.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.keycloak.bom</groupId>
+        <artifactId>keycloak-misc-bom</artifactId>
+        <version>${keycloak.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <!--
+            <dependency>
+              <groupId>com.backbase</groupId>
+              <artifactId>backbase-bom</artifactId>
+              <version>${bb.version}</version>
+              <type>pom</type>
+              <scope>import</scope>
+            </dependency>
+      -->
+      <!--
+      -->
+      <dependency>
+        <groupId>com.backbase.buildingblocks</groupId>
+        <artifactId>backbase-building-blocks-release</artifactId>
+        <version>${ssdk-bom.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.backbase</groupId>
+        <artifactId>platform-bom</artifactId>
+        <version>${platform-bom.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.backbase.dbs</groupId>
+        <artifactId>banking-services-bom</artifactId>
+        <version>${dbs-bom.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.backbase.identity</groupId>
+        <artifactId>identity-bom</artifactId>
+        <version>${identity-bom.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.backbase.flow</groupId>
+        <artifactId>flow-bom</artifactId>
+        <version>${flow-bom.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.backbase.cxp</groupId>
+        <artifactId>cx-bom</artifactId>
+        <version>${cx-bom.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+
+  <profiles>
+    <profile>
+      <id>accesscontrol-pandp-service-sql</id>
+      <properties>
+        <target.groupId>com.backbase.dbs.accesscontrol</target.groupId>
+        <target.artifactId>accesscontrol-pandp-service</target.artifactId>
+        <target.version></target.version>
+        <target.type>zip</target.type>
+        <target.classifier>sql</target.classifier>
+        <target.includes>**/*</target.includes>
+      </properties>
+    </profile>
+    <profile>
+      <id>use-bom</id>
+      <properties>
+        <target.version></target.version>
+      </properties>
+    </profile>
+  </profiles>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>3.1.2</version>
+        <executions>
+          <execution>
+            <id>unpack</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>unpack</goal>
+            </goals>
+            <configuration>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>${target.groupId}</groupId>
+                  <artifactId>${target.artifactId}</artifactId>
+                  <version>${target.version}</version>
+                  <type>${target.type}</type>
+                  <classifier>${target.classifier}</classifier>
+                  <includes>${target.includes}</includes>
+                </artifactItem>
+              </artifactItems>
+<!--              <includes>**/*.sql,**/*.xml,**/*.y*ml</includes>-->
+              <outputDirectory>${project.build.directory}/generated-resources</outputDirectory>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
