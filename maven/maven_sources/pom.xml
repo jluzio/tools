@@ -59,8 +59,6 @@
               <scope>import</scope>
             </dependency>
       -->
-      <!--
-      -->
       <dependency>
         <groupId>com.backbase.buildingblocks</groupId>
         <artifactId>backbase-building-blocks-release</artifactId>
