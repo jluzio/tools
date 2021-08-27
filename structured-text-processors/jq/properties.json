@@ -1,0 +1,62 @@
+{
+    "properties": {
+      "property": [
+        {
+          "name": "SIG_SECRET_KEY",
+          "value": "JWTSecretKeyDontUseInProduction!"
+        },
+        {
+          "name": "NBB_CLIENT_ESB_URL_EFTS_BILL_INQUIRY",
+          "value": "${nbb.client.esb.basePath}/eftsbillinquiry/v1"
+        },
+        {
+          "name": "NBB_CLIENT_ESB_URL_EFTS_BILL_PAYMENT_SETUP",
+          "value": "${nbb.client.esb.basePath}/eftsbillpaymentsetup/v1"
+        },
+        {
+          "name": "NBB_CLIENT_ESB_URL_TC4_EFTS_BILLER_CODE",
+          "value": "${nbb.client.esb.basePath}/tc4eftsbillercode/v1"
+        },
+        {
+          "name": "NBB_CLIENT_ESB_URL_EFTS_BILLER_SERVICE_FIELD",
+          "value": "${nbb.client.esb.basePath}/getbillerdetails/v1"
+        },
+        {
+          "name": "NBB_CLIENT_ESB_URL_TC4_EFTS_BILLERS_LIST",
+          "value": "${nbb.client.esb.basePath}/tc4eftsbillerslist/v1"
+        },
+        {
+          "name": "NBB_CLIENT_ESB_URL_DELETE_PAYEE_API",
+          "value": "${nbb.client.esb.basePath}/fawateerdeletepayees/v1"
+        },
+        {
+          "name": "NBB_CLIENT_ESB_URL_FUNDS_TRANSFER_WITH_FEE",
+          "value": "${nbb.client.esb.basePath}/fundtransferwithfee/v1"
+        },
+        {
+          "name": "NBB_CLIENT_ESB_URL_POST_FXRATES_CALCULATE_API",
+          "value": "${nbb.client.esb.basePath}/exchangerateinquiry/v1"
+        },
+        {
+          "name": "NBB_CLIENT_ESB_URL_RETRIEVE_PAYEES_API",
+          "value": "${nbb.client.esb.basePath}/fawateerretrievepayees/v1"
+        },
+        {
+          "name": "NBB_CLIENT_ESB_URL_EFTS_BILLER_CODE",
+          "value": "${nbb.client.esb.basePath}/eftsbillercode/v1"
+        },
+        {
+          "name": "NBB_CLIENT_ESB_URL_STORE_PAYEE_API",
+          "value": "${nbb.client.esb.basePath}/fawateerstorepayees/v1"
+        },
+        {
+          "name": "NBB_CLIENT_ESB_URL_EFTS_TRANSACTION_STATUS",
+          "value": "${nbb.client.esb.basePath}/eftstransactionstatusinquiry/v1"
+        },
+        {
+          "name": "NBB_CLIENT_ESB_URL_UPDATE_PAYEE_API",
+          "value": "${nbb.client.esb.basePath}/fawateerupdatepayees/v1"
+        }
+      ]
+    }
+  }

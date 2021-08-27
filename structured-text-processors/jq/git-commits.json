@@ -1,0 +1,397 @@
+[
+  {
+    "sha": "d18b2d078c2383d9472d0a0a226e07009025574f",
+    "node_id": "MDY6Q29tbWl0NTEwMTE0MTpkMThiMmQwNzhjMjM4M2Q5NDcyZDBhMGEyMjZlMDcwMDkwMjU1NzRm",
+    "commit": {
+      "author": {
+        "name": "itchyny",
+        "email": "itchyny@hatena.ne.jp",
+        "date": "2020-10-08T06:20:11Z"
+      },
+      "committer": {
+        "name": "William Langford",
+        "email": "wlangfor@gmail.com",
+        "date": "2021-05-01T18:34:26Z"
+      },
+      "message": "Fix msys2 installation on AppVeyor\n\nRef: https://www.msys2.org/news/#2020-06-29-new-packagers",
+      "tree": {
+        "sha": "57806511d068cc7af6f857baf8d4b84b340f9990",
+        "url": "https://api.github.com/repos/stedolan/jq/git/trees/57806511d068cc7af6f857baf8d4b84b340f9990"
+      },
+      "url": "https://api.github.com/repos/stedolan/jq/git/commits/d18b2d078c2383d9472d0a0a226e07009025574f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/stedolan/jq/commits/d18b2d078c2383d9472d0a0a226e07009025574f",
+    "html_url": "https://github.com/stedolan/jq/commit/d18b2d078c2383d9472d0a0a226e07009025574f",
+    "comments_url": "https://api.github.com/repos/stedolan/jq/commits/d18b2d078c2383d9472d0a0a226e07009025574f/comments",
+    "author": {
+      "login": "itchyny",
+      "id": 375258,
+      "node_id": "MDQ6VXNlcjM3NTI1OA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/375258?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/itchyny",
+      "html_url": "https://github.com/itchyny",
+      "followers_url": "https://api.github.com/users/itchyny/followers",
+      "following_url": "https://api.github.com/users/itchyny/following{/other_user}",
+      "gists_url": "https://api.github.com/users/itchyny/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/itchyny/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/itchyny/subscriptions",
+      "organizations_url": "https://api.github.com/users/itchyny/orgs",
+      "repos_url": "https://api.github.com/users/itchyny/repos",
+      "events_url": "https://api.github.com/users/itchyny/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/itchyny/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "wtlangford",
+      "id": 3422295,
+      "node_id": "MDQ6VXNlcjM0MjIyOTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3422295?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wtlangford",
+      "html_url": "https://github.com/wtlangford",
+      "followers_url": "https://api.github.com/users/wtlangford/followers",
+      "following_url": "https://api.github.com/users/wtlangford/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wtlangford/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wtlangford/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wtlangford/subscriptions",
+      "organizations_url": "https://api.github.com/users/wtlangford/orgs",
+      "repos_url": "https://api.github.com/users/wtlangford/repos",
+      "events_url": "https://api.github.com/users/wtlangford/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wtlangford/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "cc4efc49e1eedb98289347bf264c50c5c8656e7c",
+        "url": "https://api.github.com/repos/stedolan/jq/commits/cc4efc49e1eedb98289347bf264c50c5c8656e7c",
+        "html_url": "https://github.com/stedolan/jq/commit/cc4efc49e1eedb98289347bf264c50c5c8656e7c"
+      }
+    ]
+  },
+  {
+    "sha": "cc4efc49e1eedb98289347bf264c50c5c8656e7c",
+    "node_id": "MDY6Q29tbWl0NTEwMTE0MTpjYzRlZmM0OWUxZWVkYjk4Mjg5MzQ3YmYyNjRjNTBjNWM4NjU2ZTdj",
+    "commit": {
+      "author": {
+        "name": "Mattias Wadman",
+        "email": "mattias.wadman@gmail.com",
+        "date": "2021-02-21T16:49:23Z"
+      },
+      "committer": {
+        "name": "William Langford",
+        "email": "wlangfor@gmail.com",
+        "date": "2021-05-01T18:33:01Z"
+      },
+      "message": "Fix incorrect if empty string example",
+      "tree": {
+        "sha": "ed9619cf4d31a028a8dd60eb6d313f5c3057372a",
+        "url": "https://api.github.com/repos/stedolan/jq/git/trees/ed9619cf4d31a028a8dd60eb6d313f5c3057372a"
+      },
+      "url": "https://api.github.com/repos/stedolan/jq/git/commits/cc4efc49e1eedb98289347bf264c50c5c8656e7c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/stedolan/jq/commits/cc4efc49e1eedb98289347bf264c50c5c8656e7c",
+    "html_url": "https://github.com/stedolan/jq/commit/cc4efc49e1eedb98289347bf264c50c5c8656e7c",
+    "comments_url": "https://api.github.com/repos/stedolan/jq/commits/cc4efc49e1eedb98289347bf264c50c5c8656e7c/comments",
+    "author": {
+      "login": "wader",
+      "id": 185566,
+      "node_id": "MDQ6VXNlcjE4NTU2Ng==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/185566?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wader",
+      "html_url": "https://github.com/wader",
+      "followers_url": "https://api.github.com/users/wader/followers",
+      "following_url": "https://api.github.com/users/wader/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wader/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wader/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wader/subscriptions",
+      "organizations_url": "https://api.github.com/users/wader/orgs",
+      "repos_url": "https://api.github.com/users/wader/repos",
+      "events_url": "https://api.github.com/users/wader/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wader/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "wtlangford",
+      "id": 3422295,
+      "node_id": "MDQ6VXNlcjM0MjIyOTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3422295?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wtlangford",
+      "html_url": "https://github.com/wtlangford",
+      "followers_url": "https://api.github.com/users/wtlangford/followers",
+      "following_url": "https://api.github.com/users/wtlangford/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wtlangford/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wtlangford/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wtlangford/subscriptions",
+      "organizations_url": "https://api.github.com/users/wtlangford/orgs",
+      "repos_url": "https://api.github.com/users/wtlangford/repos",
+      "events_url": "https://api.github.com/users/wtlangford/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wtlangford/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e615bdc407ddcb82f1d78f1651464ad28e287954",
+        "url": "https://api.github.com/repos/stedolan/jq/commits/e615bdc407ddcb82f1d78f1651464ad28e287954",
+        "html_url": "https://github.com/stedolan/jq/commit/e615bdc407ddcb82f1d78f1651464ad28e287954"
+      }
+    ]
+  },
+  {
+    "sha": "e615bdc407ddcb82f1d78f1651464ad28e287954",
+    "node_id": "MDY6Q29tbWl0NTEwMTE0MTplNjE1YmRjNDA3ZGRjYjgyZjFkNzhmMTY1MTQ2NGFkMjhlMjg3OTU0",
+    "commit": {
+      "author": {
+        "name": "mjarosie",
+        "email": "mjarosie@users.noreply.github.com",
+        "date": "2021-02-01T21:09:22Z"
+      },
+      "committer": {
+        "name": "William Langford",
+        "email": "wlangfor@gmail.com",
+        "date": "2021-05-01T18:32:38Z"
+      },
+      "message": "update the version available through Chocolatey",
+      "tree": {
+        "sha": "a90395af69a11ed29f935c651fa82125492e2697",
+        "url": "https://api.github.com/repos/stedolan/jq/git/trees/a90395af69a11ed29f935c651fa82125492e2697"
+      },
+      "url": "https://api.github.com/repos/stedolan/jq/git/commits/e615bdc407ddcb82f1d78f1651464ad28e287954",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/stedolan/jq/commits/e615bdc407ddcb82f1d78f1651464ad28e287954",
+    "html_url": "https://github.com/stedolan/jq/commit/e615bdc407ddcb82f1d78f1651464ad28e287954",
+    "comments_url": "https://api.github.com/repos/stedolan/jq/commits/e615bdc407ddcb82f1d78f1651464ad28e287954/comments",
+    "author": {
+      "login": "mjarosie",
+      "id": 9082353,
+      "node_id": "MDQ6VXNlcjkwODIzNTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9082353?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjarosie",
+      "html_url": "https://github.com/mjarosie",
+      "followers_url": "https://api.github.com/users/mjarosie/followers",
+      "following_url": "https://api.github.com/users/mjarosie/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjarosie/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjarosie/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjarosie/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjarosie/orgs",
+      "repos_url": "https://api.github.com/users/mjarosie/repos",
+      "events_url": "https://api.github.com/users/mjarosie/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjarosie/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "wtlangford",
+      "id": 3422295,
+      "node_id": "MDQ6VXNlcjM0MjIyOTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3422295?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wtlangford",
+      "html_url": "https://github.com/wtlangford",
+      "followers_url": "https://api.github.com/users/wtlangford/followers",
+      "following_url": "https://api.github.com/users/wtlangford/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wtlangford/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wtlangford/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wtlangford/subscriptions",
+      "organizations_url": "https://api.github.com/users/wtlangford/orgs",
+      "repos_url": "https://api.github.com/users/wtlangford/repos",
+      "events_url": "https://api.github.com/users/wtlangford/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wtlangford/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9600a5c78141051adc08362b9c5446a15ae4d9a4",
+        "url": "https://api.github.com/repos/stedolan/jq/commits/9600a5c78141051adc08362b9c5446a15ae4d9a4",
+        "html_url": "https://github.com/stedolan/jq/commit/9600a5c78141051adc08362b9c5446a15ae4d9a4"
+      }
+    ]
+  },
+  {
+    "sha": "9600a5c78141051adc08362b9c5446a15ae4d9a4",
+    "node_id": "MDY6Q29tbWl0NTEwMTE0MTo5NjAwYTVjNzgxNDEwNTFhZGMwODM2MmI5YzU0NDZhMTVhZTRkOWE0",
+    "commit": {
+      "author": {
+        "name": "Aleksey Tsalolikhin",
+        "email": "atsalolikhin@spokeo.com",
+        "date": "2020-08-06T22:28:44Z"
+      },
+      "committer": {
+        "name": "William Langford",
+        "email": "wlangfor@gmail.com",
+        "date": "2021-05-01T18:19:45Z"
+      },
+      "message": "Re-apply patch from ff8924ce16e58f to dev manual",
+      "tree": {
+        "sha": "0a65a6e6f79c1c69c595ebd918965d6a45260d9c",
+        "url": "https://api.github.com/repos/stedolan/jq/git/trees/0a65a6e6f79c1c69c595ebd918965d6a45260d9c"
+      },
+      "url": "https://api.github.com/repos/stedolan/jq/git/commits/9600a5c78141051adc08362b9c5446a15ae4d9a4",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/stedolan/jq/commits/9600a5c78141051adc08362b9c5446a15ae4d9a4",
+    "html_url": "https://github.com/stedolan/jq/commit/9600a5c78141051adc08362b9c5446a15ae4d9a4",
+    "comments_url": "https://api.github.com/repos/stedolan/jq/commits/9600a5c78141051adc08362b9c5446a15ae4d9a4/comments",
+    "author": {
+      "login": "atsalolikhin-spokeo",
+      "id": 66701226,
+      "node_id": "MDQ6VXNlcjY2NzAxMjI2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66701226?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/atsalolikhin-spokeo",
+      "html_url": "https://github.com/atsalolikhin-spokeo",
+      "followers_url": "https://api.github.com/users/atsalolikhin-spokeo/followers",
+      "following_url": "https://api.github.com/users/atsalolikhin-spokeo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/atsalolikhin-spokeo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/atsalolikhin-spokeo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/atsalolikhin-spokeo/subscriptions",
+      "organizations_url": "https://api.github.com/users/atsalolikhin-spokeo/orgs",
+      "repos_url": "https://api.github.com/users/atsalolikhin-spokeo/repos",
+      "events_url": "https://api.github.com/users/atsalolikhin-spokeo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/atsalolikhin-spokeo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "wtlangford",
+      "id": 3422295,
+      "node_id": "MDQ6VXNlcjM0MjIyOTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3422295?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wtlangford",
+      "html_url": "https://github.com/wtlangford",
+      "followers_url": "https://api.github.com/users/wtlangford/followers",
+      "following_url": "https://api.github.com/users/wtlangford/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wtlangford/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wtlangford/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wtlangford/subscriptions",
+      "organizations_url": "https://api.github.com/users/wtlangford/orgs",
+      "repos_url": "https://api.github.com/users/wtlangford/repos",
+      "events_url": "https://api.github.com/users/wtlangford/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wtlangford/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d57d9737d712ea0c72795f03013d76503635f278",
+        "url": "https://api.github.com/repos/stedolan/jq/commits/d57d9737d712ea0c72795f03013d76503635f278",
+        "html_url": "https://github.com/stedolan/jq/commit/d57d9737d712ea0c72795f03013d76503635f278"
+      }
+    ]
+  },
+  {
+    "sha": "d57d9737d712ea0c72795f03013d76503635f278",
+    "node_id": "MDY6Q29tbWl0NTEwMTE0MTpkNTdkOTczN2Q3MTJlYTBjNzI3OTVmMDMwMTNkNzY1MDM2MzVmMjc4",
+    "commit": {
+      "author": {
+        "name": "Aleksey Tsalolikhin",
+        "email": "atsalolikhin@spokeo.com",
+        "date": "2020-08-06T22:27:39Z"
+      },
+      "committer": {
+        "name": "William Langford",
+        "email": "wlangfor@gmail.com",
+        "date": "2021-05-01T18:19:45Z"
+      },
+      "message": "Remove decimal number text from v1.6 manual",
+      "tree": {
+        "sha": "31bbaaabb3302f663c0698c161fa50ee08f5135f",
+        "url": "https://api.github.com/repos/stedolan/jq/git/trees/31bbaaabb3302f663c0698c161fa50ee08f5135f"
+      },
+      "url": "https://api.github.com/repos/stedolan/jq/git/commits/d57d9737d712ea0c72795f03013d76503635f278",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/stedolan/jq/commits/d57d9737d712ea0c72795f03013d76503635f278",
+    "html_url": "https://github.com/stedolan/jq/commit/d57d9737d712ea0c72795f03013d76503635f278",
+    "comments_url": "https://api.github.com/repos/stedolan/jq/commits/d57d9737d712ea0c72795f03013d76503635f278/comments",
+    "author": {
+      "login": "atsalolikhin-spokeo",
+      "id": 66701226,
+      "node_id": "MDQ6VXNlcjY2NzAxMjI2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/66701226?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/atsalolikhin-spokeo",
+      "html_url": "https://github.com/atsalolikhin-spokeo",
+      "followers_url": "https://api.github.com/users/atsalolikhin-spokeo/followers",
+      "following_url": "https://api.github.com/users/atsalolikhin-spokeo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/atsalolikhin-spokeo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/atsalolikhin-spokeo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/atsalolikhin-spokeo/subscriptions",
+      "organizations_url": "https://api.github.com/users/atsalolikhin-spokeo/orgs",
+      "repos_url": "https://api.github.com/users/atsalolikhin-spokeo/repos",
+      "events_url": "https://api.github.com/users/atsalolikhin-spokeo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/atsalolikhin-spokeo/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "wtlangford",
+      "id": 3422295,
+      "node_id": "MDQ6VXNlcjM0MjIyOTU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3422295?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wtlangford",
+      "html_url": "https://github.com/wtlangford",
+      "followers_url": "https://api.github.com/users/wtlangford/followers",
+      "following_url": "https://api.github.com/users/wtlangford/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wtlangford/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wtlangford/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wtlangford/subscriptions",
+      "organizations_url": "https://api.github.com/users/wtlangford/orgs",
+      "repos_url": "https://api.github.com/users/wtlangford/repos",
+      "events_url": "https://api.github.com/users/wtlangford/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wtlangford/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2de3bc3732a227a188ff7c5841f25551e04425a8",
+        "url": "https://api.github.com/repos/stedolan/jq/commits/2de3bc3732a227a188ff7c5841f25551e04425a8",
+        "html_url": "https://github.com/stedolan/jq/commit/2de3bc3732a227a188ff7c5841f25551e04425a8"
+      }
+    ]
+  }
+]

@@ -12,7 +12,7 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
 
-    <bb.version>2021.07</bb.version>
+    <bb-bom.version>2021.07</bb-bom.version>
     <ssdk-bom.version>10.3.0</ssdk-bom.version>
     <ssdk-bom.version>13.0.0</ssdk-bom.version>
     <platform-bom.version>1.13.3</platform-bom.version>
@@ -50,17 +50,7 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-      <!--
-            <dependency>
-              <groupId>com.backbase</groupId>
-              <artifactId>backbase-bom</artifactId>
-              <version>${bb.version}</version>
-              <type>pom</type>
-              <scope>import</scope>
-            </dependency>
-      -->
-      <!--
-      -->
+
       <dependency>
         <groupId>com.backbase.buildingblocks</groupId>
         <artifactId>backbase-building-blocks-release</artifactId>
@@ -68,46 +58,90 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+
       <dependency>
         <groupId>com.backbase</groupId>
-        <artifactId>platform-bom</artifactId>
-        <version>${platform-bom.version}</version>
+        <artifactId>backbase-bom</artifactId>
+        <version>${bb-bom.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-      <dependency>
-        <groupId>com.backbase.dbs</groupId>
-        <artifactId>banking-services-bom</artifactId>
-        <version>${dbs-bom.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>com.backbase.identity</groupId>
-        <artifactId>identity-bom</artifactId>
-        <version>${identity-bom.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>com.backbase.flow</groupId>
-        <artifactId>flow-bom</artifactId>
-        <version>${flow-bom.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>com.backbase.cxp</groupId>
-        <artifactId>cx-bom</artifactId>
-        <version>${cx-bom.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
+
+      <!--
+            <dependency>
+              <groupId>com.backbase</groupId>
+              <artifactId>platform-bom</artifactId>
+              <version>${platform-bom.version}</version>
+              <type>pom</type>
+              <scope>import</scope>
+            </dependency>
+            <dependency>
+              <groupId>com.backbase.dbs</groupId>
+              <artifactId>banking-services-bom</artifactId>
+              <version>${dbs-bom.version}</version>
+              <type>pom</type>
+              <scope>import</scope>
+            </dependency>
+            <dependency>
+              <groupId>com.backbase.identity</groupId>
+              <artifactId>identity-bom</artifactId>
+              <version>${identity-bom.version}</version>
+              <type>pom</type>
+              <scope>import</scope>
+            </dependency>
+            <dependency>
+              <groupId>com.backbase.flow</groupId>
+              <artifactId>flow-bom</artifactId>
+              <version>${flow-bom.version}</version>
+              <type>pom</type>
+              <scope>import</scope>
+            </dependency>
+            <dependency>
+              <groupId>com.backbase.cxp</groupId>
+              <artifactId>cx-bom</artifactId>
+              <version>${cx-bom.version}</version>
+              <type>pom</type>
+              <scope>import</scope>
+            </dependency>
+      -->
     </dependencies>
   </dependencyManagement>
 
 
   <profiles>
+    <profile>
+      <id>contact-manager-api</id>
+      <properties>
+        <target.groupId>com.backbase.dbs.contact</target.groupId>
+        <target.artifactId>contact-manager</target.artifactId>
+        <target.version></target.version>
+        <target.type>zip</target.type>
+        <target.classifier>api</target.classifier>
+        <target.includes>**/*</target.includes>
+      </properties>
+    </profile>
+    <profile>
+      <id>arrangement-manager-api</id>
+      <properties>
+        <target.groupId>com.backbase.dbs.arrangement</target.groupId>
+        <target.artifactId>arrangement-manager</target.artifactId>
+        <target.version></target.version>
+        <target.type>zip</target.type>
+        <target.classifier>api</target.classifier>
+        <target.includes>**/*</target.includes>
+      </properties>
+    </profile>
+    <profile>
+      <id>exchange-api</id>
+      <properties>
+        <target.groupId>com.backbase.dbs.exchange</target.groupId>
+        <target.artifactId>exchange-integration-service</target.artifactId>
+        <target.version></target.version>
+        <target.type>zip</target.type>
+        <target.classifier>api</target.classifier>
+        <target.includes>**/*</target.includes>
+      </properties>
+    </profile>
     <profile>
       <id>accesscontrol-pandp-service-sql</id>
       <properties>
@@ -120,9 +154,14 @@
       </properties>
     </profile>
     <profile>
-      <id>use-bom</id>
+      <id>accesscontrol-service-sql</id>
       <properties>
+        <target.groupId>com.backbase.dbs.accesscontrol</target.groupId>
+        <target.artifactId>accesscontrol-pandp-service</target.artifactId>
         <target.version></target.version>
+        <target.type>zip</target.type>
+        <target.classifier>sql</target.classifier>
+        <target.includes>**/*</target.includes>
       </properties>
     </profile>
   </profiles>

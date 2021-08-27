@@ -1,0 +1,78 @@
+# Logging
+logging:
+  level:
+    root: INFO
+    com.nbb: INFO
+    org.springframework: INFO
+    org.springframework.web: INFO
+
+spring:
+  profiles:
+    active: live
+  application:
+    name: fawateer-service
+    jmx:
+      default-domain: ${spring.application.name}
+    jta:
+      logDir: target/${spring.application.name}-logs
+  jackson:
+    date-format: "YYYY-MM-dd"
+    deserialization:
+      adjust_dates_to_context_time_zone: false
+    serialization:
+      write_dates_as_timestamps: false
+
+# API Registry client configuration
+eureka:
+  instance:
+    metadata-map:
+      public: true
+      role: live
+  client:
+    serviceUrl:
+      defaultZone: http://${REGISTRY_HOST:localhost}:${REGISTRY_PORT:8080}/registry/eureka/
+
+# Configure Internal JWT handler
+sso:
+  jwt:
+    internal:
+      signature:
+        key:
+          type: ENV
+          value: SIG_SECRET_KEY
+
+# Spring health monitoring
+management:
+  health:
+    jms:
+      enabled: false
+
+nbb:
+  client:
+    esb:
+      headers:
+        INET:
+          srcAppId: ${NBB_CLIENT_ESB_HEADERS_INET_SRCAPP_ID:INET}
+          instanceId: ${NBB_CLIENT_ESB_HEADERS_INET_INSTANCE_ID:IBT000}
+          orgId: ${NBB_CLIENT_ESB_HEADERS_INET_ORG_ID:BH}
+      url:
+        billInquiryApi: ${NBB_CLIENT_ESB_URL_EFTS_BILL_INQUIRY}
+        billPaymentSetupApi: ${NBB_CLIENT_ESB_URL_EFTS_BILL_PAYMENT_SETUP}
+        billerServiceDetailsApi: ${NBB_CLIENT_ESB_URL_TC4_EFTS_BILLER_CODE}
+        billerServiceFieldsApi: ${NBB_CLIENT_ESB_URL_EFTS_BILLER_SERVICE_FIELD}
+        billersListApi: ${NBB_CLIENT_ESB_URL_TC4_EFTS_BILLERS_LIST}
+        deletePayeeApi: ${NBB_CLIENT_ESB_URL_DELETE_PAYEE_API}
+        fundsTransferWithFeeApi: ${NBB_CLIENT_ESB_URL_FUNDS_TRANSFER_WITH_FEE}
+        fxratescalculateApi: ${NBB_CLIENT_ESB_URL_POST_FXRATES_CALCULATE_API}
+        retrievePayeesApi: ${NBB_CLIENT_ESB_URL_RETRIEVE_PAYEES_API}
+        servicesListApi: ${NBB_CLIENT_ESB_URL_EFTS_BILLER_CODE}
+        storePayeeApi: ${NBB_CLIENT_ESB_URL_STORE_PAYEE_API}
+        transactionStatusApi: ${NBB_CLIENT_ESB_URL_EFTS_TRANSACTION_STATUS}
+        updatePayeeApi: ${NBB_CLIENT_ESB_URL_UPDATE_PAYEE_API}
+  contentServices:
+    billersLogosHost: ${BILLERS_LOGOS_HOST:http://contentservices/api/contentstream/contentRepository/Fawateer/Billers/billers-logos}
+  services:
+    otpServiceHost: ${OTP_SERVICE_HOST:http://identity-identityonespanauthservice:8080/}
+  paymentReceipt:
+    success: payment-receipt-success.pdf
+    fail: payment-receipt-fail.pdf
