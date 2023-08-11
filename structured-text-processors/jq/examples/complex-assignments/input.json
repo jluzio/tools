@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": "id1",
+      "title": "title1",
+      "author": "stedolan",
+      "comments": [
+        "c1"
+      ]
+    },
+    {
+      "id": "id2",
+      "title": "title2",
+      "author": "stedolan",
+      "comments": []
+    },
+    {
+      "id": "id3",
+      "title": "title3",
+      "author": "johndoe",
+      "comments": []
+    }
+  ]
+}

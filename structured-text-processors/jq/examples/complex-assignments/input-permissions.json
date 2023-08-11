@@ -1,0 +1,36 @@
+{
+  "additions": {},
+  "approvalId": null,
+  "items": [
+    {
+      "additions": {},
+      "functionGroupId": "8a678fc2735c67140173eca09a0c0836",
+      "dataGroupIds": [
+        {
+          "additions": {},
+          "id": "8a678fc2735c67140173eca034e90823"
+        },
+        {
+          "additions": {},
+          "id": "8a678fab896e302c0189c1594e56001b"
+        }
+      ],
+      "selfApprovalPolicies": []
+    },
+    {
+      "additions": {},
+      "functionGroupId": "8a678fc2735c67140173eca0b7380855",
+      "dataGroupIds": [
+        {
+          "additions": {},
+          "id": "8a678fc2735c67140173eca073c1082b"
+        },
+        {
+          "additions": {},
+          "id": "8a678fab896e302c0189c1252ecb001a"
+        }
+      ],
+      "selfApprovalPolicies": []
+    }
+  ]
+}

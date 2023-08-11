@@ -7,14 +7,18 @@
   <version>1.0</version>
 
   <properties>
-    <java.version>15</java.version>
+    <java.version>17</java.version>
     <maven.compiler.release>${java.version}</maven.compiler.release>
     <downloadSources>true</downloadSources>
     <downloadJavadocs>true</downloadJavadocs>
 
-<!--    <bb.version>2021.07</bb.version>-->
-    <bb.version>2021.12.5</bb.version>
-    <ssdk-bom.version>14.0.0</ssdk-bom.version>
+    <!--    <bb.version>2022.04.2</bb.version>-->
+    <!--    <bb.version>2021.8</bb.version>-->
+    <bb.version>2022.01.10-LTS</bb.version>
+<!--    <bb.version>2022.01.11-LTS</bb.version>-->
+    <!--    <bb.version>2021.12.5</bb.version>-->
+    <!--    <bb.version>2021.07</bb.version>-->
+    <ssdk-bom.version>14.1.1</ssdk-bom.version>
     <platform-bom.version>1.13.3</platform-bom.version>
     <dbs-bom.version>2.17.3</dbs-bom.version>
     <!--    <dbs-bom.version>2.18.2.8</dbs-bom.version>-->
@@ -50,6 +54,13 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <dependency>
+        <groupId>com.backbase</groupId>
+        <artifactId>backbase-bom</artifactId>
+        <version>${bb.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
@@ -72,7 +83,10 @@
       </dependencyManagement>
     </profile>
     <profile>
-      <id>backbase-no-bom</id>
+      <id>ssdk-bom</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
       <dependencyManagement>
         <dependencies>
           <dependency>
@@ -82,6 +96,13 @@
             <type>pom</type>
             <scope>import</scope>
           </dependency>
+        </dependencies>
+      </dependencyManagement>
+    </profile>
+    <profile>
+      <id>backbase-no-bom</id>
+      <dependencyManagement>
+        <dependencies>
           <dependency>
             <groupId>com.backbase</groupId>
             <artifactId>platform-bom</artifactId>
@@ -158,11 +179,12 @@
         </dependency>
     -->
 
+    <!--
     <dependency>
       <groupId>com.backbase.dbs.paymentorder</groupId>
       <artifactId>payment-order-service</artifactId>
     </dependency>
-
+  -->
   </dependencies>
 
 </project>

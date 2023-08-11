@@ -1,0 +1,90 @@
+[
+  {
+    "name": "KEYCLOAK_BACKBASE_EVENT_LISTENERS_AUDIT_INTEGRATIONSERVICEURL",
+    "value": "http://host.docker.internal:8092/audit-service"
+  },
+  {
+    "name": "KEYCLOAK_BACKBASE_DEVICE_URL",
+    "value": "http://host.docker.internal:8181/device-management-service"
+  },
+  {
+    "name": "KEYCLOAK_BACKBASE_FIDO_URL",
+    "value": "http://host.docker.internal:8181/fido-service"
+  },
+  {
+    "name": "KEYCLOAK_BACKBASE_OIDC_TOKEN_CONVERTER_URL",
+    "value": "http://host.docker.internal:8181/oidc-token-converter-service"
+  },
+  {
+    "name": "QUARKUS_DATASOURCE_URL",
+    "value": "jdbc:mysql://host.docker.internal:3306/backbase_identity?useSSL=false"
+  },
+  {
+    "name": "QUARKUS_DATASOURCE_USERNAME",
+    "value": "bbiam"
+  },
+  {
+    "name": "QUARKUS_DATASOURCE_PASSWORD",
+    "value": "bb1am:PW"
+  },
+  {
+    "name": "QUARKUS_DATASOURCE_DRIVER",
+    "value": "com.mysql.cj.jdbc.Driver"
+  },
+  {
+    "name": "QUARKUS_LOG_FILE_ENABLE",
+    "value": "false"
+  },
+  {
+    "name": "KEYCLOAK_ADMIN",
+    "value": "admin"
+  },
+  {
+    "name": "KEYCLOAK_ADMIN_PASSWORD",
+    "value": "admin"
+  },
+  {
+    "name": "KEYCLOAK_CONNECTIONSJPA_QUARKUS_INITIALIZEEMPTY",
+    "value": "true"
+  },
+  {
+    "name": "KEYCLOAK_CONNECTIONSJPA_QUARKUS_MIGRATIONSTRATEGY",
+    "value": "update"
+  },
+  {
+    "name": "ONESPAN_AUTH_INTEGRATION_SERVICE_BASE_URL",
+    "value": "http://host.docker.internal:8580/"
+  },
+  {
+    "name": "JAVA_TOOL_OPTIONS",
+    "value": "-Dkeycloak.migration.strategy=IGNORE_EXISTING -Dkeycloak.migration.action=import -Dkeycloak.profile.feature.upload_scripts=enabled -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005"
+  },
+  {
+    "name": "PASSCODE_LENGTH",
+    "value": "6"
+  },
+  {
+    "name": "API_INGESTION_BASE_PATH",
+    "value": "http://host.docker.internal:9001"
+  },
+  {
+    "name": "API_ACCESS_CONTROL_BASE_PATH",
+    "value": "http://host.docker.internal:8086/access-control"
+  },
+  {
+    "name": "API_AUDIT_BASE_PATH",
+    "value": "http://host.docker.internal:8092/audit-service"
+  },
+  {
+    "name": "CONNECTION_TIMEOUT_MS",
+    "value": "5000"
+  },
+  {
+    "name": "CONNECTION_REQUEST_TIMEOUT_MS",
+    "value": "5000"
+  },
+  {
+    "name": "SOCKET_TIMEOUT_MS",
+    "value": "30000"
+  }
+]
